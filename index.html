@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krzysztof Sluzewski - Zadanie 2. Formularze, operacje na tablicach – JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Krzysztof Sluzewski - Zadanie 2. Formularze, operacje na tablicach – JS</h1>
+    <h2>Biblioteka książek</h2>
+    <table class="library">
+        <thead>
+            <tr>
+                <th>Tytuł
+                <th>Autor
+                <th>Priorytet
+                <th>Kategoria
+        <tbody>
+    </table>
+    <form class="addBookForm">
+        <h2>Dodaj książke do biblioteki</h2>
+        <label class="addBookForm__title" for="title">
+            Tytuł książki
+            <input type="text" id="title">
+        </label>
+        <label class="addBookForm__author" for="author">
+            Autor książki
+            <input type="text" id="author">
+        </label>
+        <label class="addBookForm__priority priority" for="priority">
+            Priorytet przeczytania
+            <div class="priority__container">
+                <label for="priority1">
+                    1
+                    <input type="radio" name="priority" id="priority1" value="1">
+                </label>
+                <label for="priority2">
+                    2
+                    <input type="radio" name="priority" id="priority2" value="2">
+                </label>
+                <label for="priority3">
+                    3
+                    <input type="radio" name="priority" id="priority3" value="3">
+                </label>
+                <label for="priority4">
+                    4
+                    <input type="radio" name="priority" id="priority4" value="4">
+                </label>
+                <label for="priority5">
+                    5
+                    <input type="radio" name="priority" id="priority5" value="5">
+                </label>
+            </div>
+        </label>
+        <label class="addBookForm__category" for="category">
+            Kategoria
+            <select name="category" id="category" placeholder="Wybierz kategorie">
+                <option disabled selected value style="display: none">Wybierz kategorie</option>
+                <option value="Sport">Sport</option>
+                <option value="Programowanie">Programowanie</option>
+                <option value="Polityka">Polityka</option>
+            </select>
+        </label>
+        <input type="submit">
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body > h2 {
+    text-align: center;
+}
+
+.addBookForm {
+    display:flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto 0px auto;
+}
+
+.addBookForm > h2 {
+    text-align: center;
+}
+
+.addBookForm > label {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.addBookForm > label > input[type="text"] {
+    margin: 5px auto 0px auto;
+    width:100%;
+    max-width: 350px;
+}
+
+.addBookForm > label > select {
+    margin: 5px auto 0px auto;
+    width:100%;
+    max-width: 200px;
+}
+
+.priority__container {
+    margin: 5px auto 0px auto;
+}
+
+.priority__container > label {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.priority__container > label > input[type="radio"] {
+    margin:0px 0px 0px 5px;
+    cursor:pointer;
+}
+
+.addBookForm > input[type='submit'] {
+    max-width: 200px;
+    margin:10px auto 0px auto;
+    padding: 6px 30px;
+    cursor:pointer;
+}
+
+.library {
+    width:100%;
+    max-width: 700px;
+    margin:0 auto;
+}
+
+.library > thead > tr > th {
+    border: 1px solid;
+}
+
+.library > tbody {
+    position: relative;
+}
+
+.library__info {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 0%);
+    width:100%;
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.addBookForm__info {
+    color:red;
+}
