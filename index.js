@@ -14,7 +14,7 @@ allFormInputs.forEach((e) => {
     })
 })
 
-formSubmitBtn.addEventListener('click', (e) => sendForm(e));
+Form.addEventListener('submit', (e) => sendForm(e));
 
 const checkBooksAtStart = () => {
     const books = JSON.parse(localStorage.getItem("books") || "[]");
