@@ -33,7 +33,7 @@ const sendForm = (e) => {
     e.preventDefault();
     const validate = validateForm();
     if (validate) {
-        if (!document.querySelector('addBookForm__info')) {
+        if (!document.querySelector('.addBookForm__info')) {
             const formInfo = document.createElement('p');
             formInfo.className = "addBookForm__info";
             formInfo.textContent = validate;
